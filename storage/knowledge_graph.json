@@ -1,0 +1,691 @@
+{
+  "metadata": {
+    "created": "2025-10-02T09:20:02.944056",
+    "version": "1.0.0",
+    "description": "Autonomous Research Agent Knowledge Graph"
+  },
+  "sessions": [
+    {
+      "id": "session_1_1759397391",
+      "query": "2025 trends in open-source LLMs",
+      "started": "2025-10-02T09:29:51.752360",
+      "status": "completed",
+      "actions": [
+        {
+          "agent": "PlannerAgent",
+          "action": "planning_started",
+          "timestamp": "2025-10-02T09:29:51.761190",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "2025 trends in open-source LLMs"
+          }
+        },
+        {
+          "agent": "PlannerAgent",
+          "action": "planning_completed",
+          "timestamp": "2025-10-02T09:29:51.761518",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "2025 trends in open-source LLMs",
+            "subtask_count": 5,
+            "subtasks": [
+              {
+                "id": 1,
+                "type": "search",
+                "description": "Search for current information about: 2025 trends in open-source LLMs",
+                "query": "2025 trends in open-source LLMs",
+                "priority": "high"
+              },
+              {
+                "id": 2,
+                "type": "search",
+                "description": "Find recent trends and developments related to: 2025 trends in open-source LLMs",
+                "query": "recent trends 2025 trends in open-source LLMs",
+                "priority": "medium"
+              },
+              {
+                "id": 3,
+                "type": "search",
+                "description": "Gather expert opinions and analysis on: 2025 trends in open-source LLMs",
+                "query": "expert analysis 2025 trends in open-source LLMs",
+                "priority": "medium"
+              },
+              {
+                "id": 4,
+                "type": "summarize",
+                "description": "Synthesize all gathered information",
+                "priority": "high",
+                "depends_on": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": 5,
+                "type": "write",
+                "description": "Generate comprehensive research report",
+                "priority": "high",
+                "depends_on": [
+                  4
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_started",
+          "timestamp": "2025-10-02T09:29:51.763754",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "2025 trends in open-source LLMs"
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_completed",
+          "timestamp": "2025-10-02T09:29:54.467441",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "2025 trends in open-source LLMs",
+            "result_count": 5,
+            "success": true
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_started",
+          "timestamp": "2025-10-02T09:29:54.468242",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "recent trends 2025 trends in open-source LLMs"
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_completed",
+          "timestamp": "2025-10-02T09:29:54.643883",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "recent trends 2025 trends in open-source LLMs",
+            "result_count": 0,
+            "success": true
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_started",
+          "timestamp": "2025-10-02T09:29:54.644740",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "expert analysis 2025 trends in open-source LLMs"
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_completed",
+          "timestamp": "2025-10-02T09:29:54.802068",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "expert analysis 2025 trends in open-source LLMs",
+            "result_count": 0,
+            "success": true
+          }
+        },
+        {
+          "agent": "SummarizerAgent",
+          "action": "summarization_started",
+          "timestamp": "2025-10-02T09:29:54.808243",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "source_count": 3
+          }
+        },
+        {
+          "agent": "SummarizerAgent",
+          "action": "summarization_completed",
+          "timestamp": "2025-10-02T09:29:54.809043",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "source_count": 3,
+            "key_points": 5
+          }
+        },
+        {
+          "agent": "WriterAgent",
+          "action": "writing_started",
+          "timestamp": "2025-10-02T09:29:54.814863",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "2025 trends in open-source LLMs"
+          }
+        },
+        {
+          "agent": "WriterAgent",
+          "action": "writing_completed",
+          "timestamp": "2025-10-02T09:29:54.816287",
+          "session_id": "session_1_1759397391",
+          "data": {
+            "query": "2025 trends in open-source LLMs",
+            "report_length": 3215
+          }
+        }
+      ],
+      "ended": "2025-10-02T09:29:54.837007"
+    },
+    {
+      "id": "session_2_1759398007",
+      "query": "morocco",
+      "started": "2025-10-02T09:40:07.429164",
+      "status": "completed",
+      "actions": [
+        {
+          "agent": "PlannerAgent",
+          "action": "planning_started",
+          "timestamp": "2025-10-02T09:40:07.481667",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "morocco"
+          }
+        },
+        {
+          "agent": "PlannerAgent",
+          "action": "planning_completed",
+          "timestamp": "2025-10-02T09:40:07.483605",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "morocco",
+            "subtask_count": 5,
+            "subtasks": [
+              {
+                "id": 1,
+                "type": "search",
+                "description": "Search for current information about: morocco",
+                "query": "morocco",
+                "priority": "high"
+              },
+              {
+                "id": 2,
+                "type": "search",
+                "description": "Find recent trends and developments related to: morocco",
+                "query": "recent trends morocco",
+                "priority": "medium"
+              },
+              {
+                "id": 3,
+                "type": "search",
+                "description": "Gather expert opinions and analysis on: morocco",
+                "query": "expert analysis morocco",
+                "priority": "medium"
+              },
+              {
+                "id": 4,
+                "type": "summarize",
+                "description": "Synthesize all gathered information",
+                "priority": "high",
+                "depends_on": [
+                  1,
+                  2,
+                  3
+                ]
+              },
+              {
+                "id": 5,
+                "type": "write",
+                "description": "Generate comprehensive research report",
+                "priority": "high",
+                "depends_on": [
+                  4
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_started",
+          "timestamp": "2025-10-02T09:40:07.487883",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "morocco"
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_completed",
+          "timestamp": "2025-10-02T09:40:07.687454",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "morocco",
+            "result_count": 0,
+            "success": true
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_started",
+          "timestamp": "2025-10-02T09:40:07.688885",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "recent trends morocco"
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_completed",
+          "timestamp": "2025-10-02T09:40:07.954447",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "recent trends morocco",
+            "result_count": 0,
+            "success": true
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_started",
+          "timestamp": "2025-10-02T09:40:07.956115",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "expert analysis morocco"
+          }
+        },
+        {
+          "agent": "SearchAgent",
+          "action": "search_completed",
+          "timestamp": "2025-10-02T09:40:08.159219",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "expert analysis morocco",
+            "result_count": 0,
+            "success": true
+          }
+        },
+        {
+          "agent": "SummarizerAgent",
+          "action": "summarization_started",
+          "timestamp": "2025-10-02T09:40:08.162513",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "source_count": 3
+          }
+        },
+        {
+          "agent": "SummarizerAgent",
+          "action": "summarization_completed",
+          "timestamp": "2025-10-02T09:40:08.163681",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "source_count": 3,
+            "key_points": 0
+          }
+        },
+        {
+          "agent": "WriterAgent",
+          "action": "writing_started",
+          "timestamp": "2025-10-02T09:40:08.170603",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "morocco"
+          }
+        },
+        {
+          "agent": "WriterAgent",
+          "action": "writing_completed",
+          "timestamp": "2025-10-02T09:40:08.172320",
+          "session_id": "session_2_1759398007",
+          "data": {
+            "query": "morocco",
+            "report_length": 535
+          }
+        }
+      ],
+      "ended": "2025-10-02T09:40:08.179751"
+    }
+  ],
+  "agents": {
+    "PlannerAgent": {
+      "first_seen": "2025-10-02T09:29:51.761190",
+      "action_count": 4,
+      "last_seen": "2025-10-02T09:40:07.483605"
+    },
+    "SearchAgent": {
+      "first_seen": "2025-10-02T09:29:51.763754",
+      "action_count": 12,
+      "last_seen": "2025-10-02T09:40:08.159219"
+    },
+    "SummarizerAgent": {
+      "first_seen": "2025-10-02T09:29:54.808243",
+      "action_count": 4,
+      "last_seen": "2025-10-02T09:40:08.163681"
+    },
+    "WriterAgent": {
+      "first_seen": "2025-10-02T09:29:54.814863",
+      "action_count": 4,
+      "last_seen": "2025-10-02T09:40:08.172320"
+    }
+  },
+  "actions": [
+    {
+      "agent": "PlannerAgent",
+      "action": "planning_started",
+      "timestamp": "2025-10-02T09:29:51.761190",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "2025 trends in open-source LLMs"
+      }
+    },
+    {
+      "agent": "PlannerAgent",
+      "action": "planning_completed",
+      "timestamp": "2025-10-02T09:29:51.761518",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "2025 trends in open-source LLMs",
+        "subtask_count": 5,
+        "subtasks": [
+          {
+            "id": 1,
+            "type": "search",
+            "description": "Search for current information about: 2025 trends in open-source LLMs",
+            "query": "2025 trends in open-source LLMs",
+            "priority": "high"
+          },
+          {
+            "id": 2,
+            "type": "search",
+            "description": "Find recent trends and developments related to: 2025 trends in open-source LLMs",
+            "query": "recent trends 2025 trends in open-source LLMs",
+            "priority": "medium"
+          },
+          {
+            "id": 3,
+            "type": "search",
+            "description": "Gather expert opinions and analysis on: 2025 trends in open-source LLMs",
+            "query": "expert analysis 2025 trends in open-source LLMs",
+            "priority": "medium"
+          },
+          {
+            "id": 4,
+            "type": "summarize",
+            "description": "Synthesize all gathered information",
+            "priority": "high",
+            "depends_on": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "type": "write",
+            "description": "Generate comprehensive research report",
+            "priority": "high",
+            "depends_on": [
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_started",
+      "timestamp": "2025-10-02T09:29:51.763754",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "2025 trends in open-source LLMs"
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_completed",
+      "timestamp": "2025-10-02T09:29:54.467441",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "2025 trends in open-source LLMs",
+        "result_count": 5,
+        "success": true
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_started",
+      "timestamp": "2025-10-02T09:29:54.468242",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "recent trends 2025 trends in open-source LLMs"
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_completed",
+      "timestamp": "2025-10-02T09:29:54.643883",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "recent trends 2025 trends in open-source LLMs",
+        "result_count": 0,
+        "success": true
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_started",
+      "timestamp": "2025-10-02T09:29:54.644740",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "expert analysis 2025 trends in open-source LLMs"
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_completed",
+      "timestamp": "2025-10-02T09:29:54.802068",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "expert analysis 2025 trends in open-source LLMs",
+        "result_count": 0,
+        "success": true
+      }
+    },
+    {
+      "agent": "SummarizerAgent",
+      "action": "summarization_started",
+      "timestamp": "2025-10-02T09:29:54.808243",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "source_count": 3
+      }
+    },
+    {
+      "agent": "SummarizerAgent",
+      "action": "summarization_completed",
+      "timestamp": "2025-10-02T09:29:54.809043",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "source_count": 3,
+        "key_points": 5
+      }
+    },
+    {
+      "agent": "WriterAgent",
+      "action": "writing_started",
+      "timestamp": "2025-10-02T09:29:54.814863",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "2025 trends in open-source LLMs"
+      }
+    },
+    {
+      "agent": "WriterAgent",
+      "action": "writing_completed",
+      "timestamp": "2025-10-02T09:29:54.816287",
+      "session_id": "session_1_1759397391",
+      "data": {
+        "query": "2025 trends in open-source LLMs",
+        "report_length": 3215
+      }
+    },
+    {
+      "agent": "PlannerAgent",
+      "action": "planning_started",
+      "timestamp": "2025-10-02T09:40:07.481667",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "morocco"
+      }
+    },
+    {
+      "agent": "PlannerAgent",
+      "action": "planning_completed",
+      "timestamp": "2025-10-02T09:40:07.483605",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "morocco",
+        "subtask_count": 5,
+        "subtasks": [
+          {
+            "id": 1,
+            "type": "search",
+            "description": "Search for current information about: morocco",
+            "query": "morocco",
+            "priority": "high"
+          },
+          {
+            "id": 2,
+            "type": "search",
+            "description": "Find recent trends and developments related to: morocco",
+            "query": "recent trends morocco",
+            "priority": "medium"
+          },
+          {
+            "id": 3,
+            "type": "search",
+            "description": "Gather expert opinions and analysis on: morocco",
+            "query": "expert analysis morocco",
+            "priority": "medium"
+          },
+          {
+            "id": 4,
+            "type": "summarize",
+            "description": "Synthesize all gathered information",
+            "priority": "high",
+            "depends_on": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "id": 5,
+            "type": "write",
+            "description": "Generate comprehensive research report",
+            "priority": "high",
+            "depends_on": [
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_started",
+      "timestamp": "2025-10-02T09:40:07.487883",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "morocco"
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_completed",
+      "timestamp": "2025-10-02T09:40:07.687454",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "morocco",
+        "result_count": 0,
+        "success": true
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_started",
+      "timestamp": "2025-10-02T09:40:07.688885",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "recent trends morocco"
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_completed",
+      "timestamp": "2025-10-02T09:40:07.954447",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "recent trends morocco",
+        "result_count": 0,
+        "success": true
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_started",
+      "timestamp": "2025-10-02T09:40:07.956115",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "expert analysis morocco"
+      }
+    },
+    {
+      "agent": "SearchAgent",
+      "action": "search_completed",
+      "timestamp": "2025-10-02T09:40:08.159219",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "expert analysis morocco",
+        "result_count": 0,
+        "success": true
+      }
+    },
+    {
+      "agent": "SummarizerAgent",
+      "action": "summarization_started",
+      "timestamp": "2025-10-02T09:40:08.162513",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "source_count": 3
+      }
+    },
+    {
+      "agent": "SummarizerAgent",
+      "action": "summarization_completed",
+      "timestamp": "2025-10-02T09:40:08.163681",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "source_count": 3,
+        "key_points": 0
+      }
+    },
+    {
+      "agent": "WriterAgent",
+      "action": "writing_started",
+      "timestamp": "2025-10-02T09:40:08.170603",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "morocco"
+      }
+    },
+    {
+      "agent": "WriterAgent",
+      "action": "writing_completed",
+      "timestamp": "2025-10-02T09:40:08.172320",
+      "session_id": "session_2_1759398007",
+      "data": {
+        "query": "morocco",
+        "report_length": 535
+      }
+    }
+  ]
+}
